@@ -3,57 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YEOMI</title>
+<title>YEOMI | Cute & Premium Collection</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#fff;
-    text-align:center;
+background:#fff7fa;
+color:#444;
 }
 
 header{
-    background:#000;
-    color:white;
-    padding:20px;
+background:linear-gradient(135deg,#ffd1dc,#ffb6c1);
+padding:25px;
+text-align:center;
+position:sticky;
+top:0;
 }
 
-.logo{
-    font-size:32px;
-    font-weight:bold;
+header h1{
+color:white;
+font-size:42px;
+letter-spacing:3px;
+}
+
+header p{
+color:white;
+font-size:16px;
 }
 
 .hero{
-    padding:50px 20px;
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:42px;
+color:#ff5c8a;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+line-height:1.7;
 }
 
 .btn{
-    display:inline-block;
-    background:#000;
-    color:white;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:8px;
-    margin-top:15px;
+display:inline-block;
+margin:10px;
+padding:14px 28px;
+background:#ff5c8a;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+margin:50px 0 25px;
+color:#ff5c8a;
 }
 
 .products{
-    padding:40px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:20px;
+max-width:1200px;
+margin:auto;
 }
 
-.product{
-    border:1px solid #ddd;
-    padding:15px;
-    margin:15px auto;
-    max-width:300px;
-    border-radius:10px;
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.image{
+height:220px;
+background:linear-gradient(135deg,#ffd6e5,#ffeaf1);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:60px;
+}
+
+.card h3{
+padding:15px 15px 5px;
+color:#ff5c8a;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+padding:50px 20px;
+text-align:center;
+line-height:1.8;
+}
+
+.contact{
+background:#ffdce7;
+padding:50px 20px;
+text-align:center;
+}
+
+.contact h2{
+margin-bottom:15px;
+color:#ff5c8a;
 }
 
 footer{
-    background:#f5f5f5;
-    padding:20px;
-    margin-top:30px;
+background:#ffb6c1;
+color:white;
+text-align:center;
+padding:20px;
 }
 </style>
 </head>
@@ -61,33 +143,95 @@ footer{
 <body>
 
 <header>
-    <div class="logo">YEOMI</div>
-    <p>Fashion Jewelry Store</p>
+<h1>YEOMI</h1>
+<p>Cute • Trendy • Premium Lifestyle Collection</p>
 </header>
 
 <section class="hero">
-    <h1>Welcome to YEOMI</h1>
-    <p>Beautiful Earrings & Fashion Accessories</p>
-    <a href="https://instagram.com/yeomi.in.1" class="btn">Follow on Instagram</a>
+<h2>Welcome To YEOMI ✨</h2>
+<p>
+Discover cute and premium lifestyle products designed to make
+your everyday life beautiful and stylish.
+</p>
+
+<a class="btn" href="https://instagram.com/yeomi.in.1">Instagram</a>
+<a class="btn" href="https://wa.me/919413554253">WhatsApp Order</a>
 </section>
 
-<section class="products">
-    <h2>Our Collection</h2>
+<h2 class="section-title">Our Collections</h2>
 
-    <div class="product">
-        <h3>Premium Earrings</h3>
-        <p>Stylish & Trendy Design</p>
-    </div>
+<div class="products">
 
-    <div class="product">
-        <h3>Fashion Jewelry</h3>
-        <p>Perfect for Daily Wear</p>
-    </div>
+<div class="card">
+<div class="image">👜</div>
+<h3>Premium Handbags</h3>
+<p>Stylish and trendy handbags for every occasion.</p>
+</div>
+
+<div class="card">
+<div class="image">👛</div>
+<h3>Hand Wallets</h3>
+<p>Elegant wallets with premium finish.</p>
+</div>
+
+<div class="card">
+<div class="image">🔑</div>
+<h3>Cute Keychains</h3>
+<p>Beautiful keychains for daily use.</p>
+</div>
+
+<div class="card">
+<div class="image">🧴</div>
+<h3>Water Bottles</h3>
+<p>Stylish bottles for your lifestyle.</p>
+</div>
+
+<div class="card">
+<div class="image">🥤</div>
+<h3>Sippers</h3>
+<p>Cute and aesthetic sippers collection.</p>
+</div>
+
+<div class="card">
+<div class="image">🍱</div>
+<h3>Lunch Boxes</h3>
+<p>Premium lunch boxes for school & office.</p>
+</div>
+
+<div class="card">
+<div class="image">🌸</div>
+<h3>Perfumes</h3>
+<p>Refreshing fragrances for every mood.</p>
+</div>
+
+<div class="card">
+<div class="image">☕</div>
+<h3>Coffee Mugs</h3>
+<p>Adorable mugs for coffee lovers.</p>
+</div>
+
+</div>
+
+<section class="about">
+<h2 class="section-title">About YEOMI</h2>
+<p>
+YEOMI is a premium lifestyle brand focused on bringing cute,
+trendy and aesthetic products to customers who love beauty,
+style and quality. Our goal is to make everyday essentials
+look premium while remaining affordable.
+</p>
+</section>
+
+<section class="contact">
+<h2>Contact YEOMI</h2>
+<p><b>Instagram:</b> @yeomi.in.1</p>
+<p><b>WhatsApp:</b> +91 9413554253</p>
+<br>
+<a class="btn" href="https://wa.me/919413554253">Chat on WhatsApp</a>
 </section>
 
 <footer>
-    <p>Instagram: @yeomi.in.1</p>
-    <p>© 2026 YEOMI. All Rights Reserved.</p>
+© 2026 YEOMI | All Rights Reserved
 </footer>
 
 </body>
