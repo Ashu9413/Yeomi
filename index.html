@@ -3,43 +3,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEOMI | Luxury Aesthetic Boutique</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for Luxury Typography -->
+    <title>YEOMI | Cute & Aesthetic Products</title>
+    <!-- Google Fonts for Cute Aesthetic Aesthetic Look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-pink: #FFD1DC;
+            --dark-pink: #FFB6C1;
+            --accent-pink: #FF69B4;
+            --bg-pastel: #FFF5F7;
+            --text-dark: #4A4A4A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-pastel);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .brand-logo {
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #ffffff;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(255, 182, 193, 0.2);
+        }
+
+        .brand-logo {
+            font-size: 28px;
+            color: var(--accent-pink);
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-pink);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            background: linear-gradient(180deg, #ffffff 0%, var(--primary-pink) 100%);
+            padding: 80px 5% 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #5d4347;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #7A7A7A;
+            max-width: 600px;
+            margin: 0auto 25px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-pink);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            background-color: #ff4fa8;
+        }
+
+        /* Banner Text */
+        .promo-banner {
+            background-color: var(--dark-pink);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* Products Grid Section */
+        .products-section {
+            padding: 60px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #5d4347;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '🌸';
+            display: block;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border: 1px solid rgba(255, 182, 193, 0.3);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            background-color: #fcfcfc;
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #5d4347;
+        }
+
+        .order-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #25D366; /* WhatsApp Green */
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .order-btn:hover {
+            background-color: #20ba5a;
+        }
+
+        /* About & Info Section */
+        .info-section {
+            background-color: #ffffff;
+            padding: 50px 5%;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .info-box {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .info-box p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        /* Contact & Footer */
+        footer {
+            background-color: #fff0f3;
+            padding: 40px 5% 20px;
+            text-align: center;
+            border-top: 2px dashed var(--primary-pink);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            color: var(--text-dark);
+            transition: color 0.3s;
+        }
+
+        .social-icons a.insta:hover {
+            color: #E1306C;
+        }
+
+        .social-icons a.wa:hover {
+            color: #25D366;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: #888888;
+        }
+
+        /* Responsive Mobile View */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 32px; }
+            .nav-links { display: none; } /* Kept simple for one-page */
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Premium Minimal Navigation -->
-    <header class="navbar">
-        <div class="nav-links">
-            <a href="#">Shop</a>
-            <a href="#">Editorial</a>
-            <a href="#">Our Story</a>
-        </div>
-        <div class="brand-logo">
-            <h1>YEOMI</h1>
-        </div>
-        <div class="nav-icons">
-            <a href="#">Search</a>
-            <a href="#">Cart (0)</a>
-        </div>
+    <!-- Header Section -->
+    <header>
+        <div class="brand-logo">🎀 YEOMI</div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#products">Collection</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <!-- Luxury Hero Section -->
-    <section class="hero-section">
-        <div class="hero-image-wrapper">
-            <!-- Using the premium ruffle scrunchie image as the main background -->
-            <img src="3e52711e-096c-4ba5-afa0-d00dd0d235f1.jpeg" alt="YEOMI Premium Collection" class="hero-img">
-        </div>
-        <div class="hero-content">
-            <p class="hero-subtitle">CUTE THINGS, HAPPY HEARTS</p>
-            <h2 class="hero-title">The Summer Ruffle Edit</h2>
-            <a href="#" class="hero-btn">DISCOVER THE COLLECTION</a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to YEOMI 🤍</h1>
+        <p>Cute & Aesthetic Products, Your destination for everything cute. Cute Things, Happy Hearts! ✨</p>
+        <a href="https://wa.me/919413554253" target="_blank" class="cta-btn">
+            <i class="fab fa-whatsapp"></i> Chat & Order Now
+        </a>
+    </section>
+
+    <!-- Top Announcement Bar -->
+    <div class="promo-banner">
+        📦 Pan India Shipping Available! DM or WhatsApp to Order 💌
+    </div>
+
+    <!-- Products Gallery Section -->
+    <section class="products-section" id="products">
+        <h2 class="section-title">Our Best Collections</h2>
+        
+        <div class="grid">
+            <!-- Product 1: Hair Accessories -->
+            <div class="card">
+                <img src="IMG_6411.jpg" alt="Cute Hair Accessories" class="card-img" onerror="this.src='https://via.placeholder.com/300x350/fff0f3/a67c84?text=Cute+Hair+Accessories'">
+                <div class="card-body">
+                    <h3 class="card-title">Cute Hair Accessories & Bows</h3>
+                    <p style="font-size:14px; color:#888;">Trendy clips and headbands to style up</p>
+                    <a href="https://wa.me/919413554253?text=Hi%20YEOMI,%20I%20am%20interested%20in%20your%20Hair%20Accessories" target="_blank" class="order-btn">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 2: Keychains -->
+            <div class="card">
+                <img src="IMG_6410.jpg" alt="Aesthetic Keychains" class="card-img" onerror="this.src='https://via.placeholder.com/300x350/fff0f3/a67c84?text=Aesthetic+Keychains'">
+                <div class="card-body">
+                    <h3 class="card-title">Aesthetic 3D Keychains</h3>
+                    <p style="font-size:14px; color:#888;">Cute characters for your keys & bags</p>
+                    <a href="https://wa.me/919413554253?text=Hi%20YEOMI,%20I%20am%20interested%20in%20your%20Cute%20Keychains" target="_blank" class="order-btn">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 3: Trendy Jewelry -->
+            <div class="card">
+                <img src="IMG_6409.jpg" alt="Trendy Jewelry" class="card-img" onerror="this.src='https://via.placeholder.com/300x350/fff0f3/a67c84?text=Chic+Jewelry+Collection'">
+                <div class="card-body">
+                    <h3 class="card-title">Chic Aesthetic Jewelry</h3>
+                    <p style="font-size:14px; color:#888;">Elegance with a cute twist</p>
+                    <a href="https://wa.me/919413554253?text=Hi%20YEOMI,%20I%20am%20interested%20in%20your%20Jewelry%20Collection" target="_blank" class="order-btn">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 4: Mini Wallets & Pouches -->
+            <div class="card">
+                <img src="IMG_6276.jpg" alt="Mini Wallets" class="card-img" onerror="this.src='https://via.placeholder.com/300x350/fff0f3/a67c84?text=Mini+Wallets'">
+                <div class="card-body">
+                    <h3 class="card-title">Cute Mini Wallets & Bags</h3>
+                    <p style="font-size:14px; color:#888;">Compact, trendy, and stylish companions</p>
+                    <a href="https://wa.me/919413554253?text=Hi%20YEOMI,%20I%20am%20interested%20in%20your%20Mini%20Wallets" target="_blank" class="order-btn">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="info-box">
+            <h2 style="margin-bottom: 15px; color: #5d4347;">Why Shop With Us?</h2>
+            <p>🌸 <strong>Unique Designs:</strong> Har product ko aapki aesthetic style ko dhyan me rakh kar select kiya gaya hai.</p>
+            <p>📦 <strong>Pan India Shipping:</strong> Aap India me kahi bhi hon, hum cute khushiyan aapke ghar tak deliver karenge.</p>
+            <p>✨ <strong>Easy Ordering:</strong> Bas apni pasandida photo ka screenshot lijiye aur niche diye gaye links par hume share kijiye!</p>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact">
+        <div class="social-icons">
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/yeomi.in1" target="_blank" class="insta" title="Follow us on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/919413554253" target="_blank" class="wa" title="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        
+        <p style="margin-bottom: 10px; font-weight: 600; color: #5d4347;">Contact Info:</p>
+        <p style="font-size: 15px; margin-bottom: 20px;">
+            Instagram: <strong>@yeomi.in1</strong><br>
+            WhatsApp: <strong>+91 9413554253</strong>
+        </p>
+        
+        <p class="footer-text">&copy; 2026 YEOMI - Cute Things, Happy Hearts. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
