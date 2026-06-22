@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEOMI - Cute Lifestyle Essentials</title>
-    <!-- Tailwind CSS -->
+    <title>YEOMI - Ultra-Cute Lifestyle Essentials</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Google Fonts for Cute Aesthetic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,167 +13,145 @@
     <style>
         body {
             font-family: 'Quicksand', sans-serif;
-            background-color: #FFF0F5; /* Lavender Blush / Light Pink */
         }
         .heading-font {
             font-family: 'Fredoka', sans-serif;
         }
-        /* Custom Light Pink Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #FFF0F5;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #FFB6C1;
-            border-radius: 10px;
-        }
     </style>
 </head>
-<body class="text-gray-700 selection:bg-pink-200">
+<body class="bg-slate-50 text-slate-700 selection:bg-teal-100">
 
     <!-- Header / Navigation -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-pink-100 shadow-sm">
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 shadow-xs">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="heading-font text-3xl font-bold tracking-wider text-pink-500 hover:text-pink-600 transition-colors">
+            <a href="#" class="heading-font text-2xl font-bold tracking-tight text-teal-600 hover:text-teal-700 transition-colors">
                 YEOMI
             </a>
             <nav class="hidden md:flex space-x-8 font-medium">
-                <a href="#products" class="text-gray-600 hover:text-pink-500 transition-colors">Collection</a>
-                <a href="#about" class="text-gray-600 hover:text-pink-500 transition-colors">About Us</a>
-                <a href="https://wa.me/919413280040" target="_blank" class="text-gray-600 hover:text-pink-500 transition-colors">Contact</a>
+                <a href="#products" class="text-slate-600 hover:text-teal-600 transition-colors">Collection</a>
+                <a href="#about" class="text-slate-600 hover:text-teal-600 transition-colors">About Us</a>
+                <a href="https://wa.me/919413280040" target="_blank" class="text-slate-600 hover:text-teal-600 transition-colors">Contact</a>
             </nav>
-            <a href="https://wa.me/919413280040" target="_blank" class="bg-pink-400 hover:bg-pink-500 text-white font-medium px-5 py-2 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all flex items-center gap-2">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.405 0 12.013 0c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.35 12.008-11.96 12.008-1.998-.001-3.961-.496-5.717-1.436L0 24zm6.59-4.846c1.66.986 3.288 1.498 4.76 1.499 5.379 0 9.761-4.38 9.764-9.758.002-2.607-1.01-5.059-2.85-6.902C16.422 2.15 13.974 1.135 11.37 1.135 5.991 1.135 1.61 5.513 1.607 10.894c-.001 1.547.411 3.054 1.193 4.401l-.103.164-1.013 3.697 3.785-.993.16.096z"/></svg>
-                Chat Now
+            <a href="https://wa.me/919413280040" target="_blank" class="bg-teal-600 hover:bg-teal-700 text-white font-medium px-4 py-2 rounded-full shadow-xs hover:shadow-md transform hover:-translate-y-0.5 transition-all flex items-center gap-1.5 text-sm">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.405 0 12.013 0c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.35 12.008-11.96 12.008-1.998-.001-3.961-.496-5.717-1.436L0 24zm6.59-4.846c1.66.986 3.288 1.498 4.76 1.499 5.379 0 9.761-4.38 9.764-9.758.002-2.607-1.01-5.059-2.85-6.902C16.422 2.15 13.974 1.135 11.37 1.135 5.991 1.135 1.61 5.513 1.607 10.894c-.001 1.547.411 3.054 1.193 4.401l-.103.164-1.013 3.697 3.785-.993.16.096z"/></svg>
+                Chat to Order
             </a>
         </div>
     </header>
 
-    <!-- Hero / Welcome Section (Updated Image & Pink Background Layout) -->
-    <section class="relative bg-gradient-to-b from-pink-100 to-pink-50 py-20 px-4 overflow-hidden min-h-[450px] flex items-center">
-        <!-- Decorative Background Elements -->
-        <div class="absolute top-10 left-10 w-20 h-20 bg-pink-200 rounded-full blur-2xl opacity-60 animate-pulse"></div>
-        <div class="absolute bottom-10 right-10 w-32 h-32 bg-pink-300 rounded-full blur-3xl opacity-40"></div>
-        
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center relative z-10 w-full">
-            <div class="text-center md:text-left space-y-4">
-                <span class="bg-pink-200 text-pink-700 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">New Arrival</span>
-                <h1 class="heading-font text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">
-                    Welcome to <span class="text-pink-500">YEOMI</span>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-teal-50 via-white to-indigo-50/50 py-16 px-4 overflow-hidden">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center relative z-10">
+            <div class="space-y-4 text-center md:text-left">
+                <span class="inline-block bg-teal-50 text-teal-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-teal-100">Curated Aesthetic Products</span>
+                <h1 class="heading-font text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                    Welcome to <span class="text-teal-600">YEOMI</span>
                 </h1>
-                <p class="text-lg text-gray-600 max-w-md">
-                    Explore our handpicked collection of ultra-cute lifestyle essentials designed to bring joy and pastel vibes to your everyday life.
+                <p class="text-base text-slate-600 max-w-md mx-auto md:mx-0">
+                    Your ultimate destination for ultra-cute lifestyle essentials. Discover handpicked accessories and treasures designed to brighten your everyday life.
                 </p>
                 <div class="pt-2">
-                    <a href="#products" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
-                        Shop the Collection
+                    <a href="#products" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-medium px-6 py-3 rounded-full shadow-xs hover:shadow-md transform hover:-translate-y-0.5 transition-all text-sm">
+                        Explore Collection
                     </a>
                 </div>
             </div>
-            
-            <!-- First Image Container (Optimized for Showcase) -->
-            <div class="flex justify-center items-center">
-                <div class="relative group p-4 bg-white/60 backdrop-blur-sm rounded-3xl border border-pink-100 shadow-xl max-w-sm w-full">
-                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=600&auto=format&fit=crop" 
-                         alt="Welcome Background Aesthetic" 
-                         class="w-full h-80 object-cover rounded-2xl shadow-inner group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute -bottom-4 -right-4 bg-pink-400 text-white p-3 rounded-2xl shadow-lg transform rotate-6">
-                        <p class="heading-font font-bold text-sm text-center">Stay Cute ✨</p>
-                    </div>
+            <div class="flex justify-center">
+                <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl bg-teal-50">
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=600&auto=format&fit=crop" alt="Cute Aesthetic Background" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
+        <!-- Decorative subtle shapes -->
+        <div class="absolute -top-12 -right-12 w-48 h-48 bg-teal-100/40 rounded-full blur-2xl"></div>
+        <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-indigo-100/40 rounded-full blur-2xl"></div>
     </section>
 
-    <!-- Products Section -->
-    <main id="products" class="max-w-6xl mx-auto px-4 py-16">
-        <div class="text-center max-w-xl mx-auto mb-12">
-            <h2 class="heading-font text-3xl md:text-4xl font-bold text-gray-800 mb-3">Our Core Collection</h2>
-            <div class="h-1 w-20 bg-pink-400 mx-auto rounded-full"></div>
-            <p class="text-gray-500 mt-4">Directly order your favorites via WhatsApp. Simple, fast, and secure.</p>
+    <!-- Main Products Grid Container -->
+    <main id="products" class="max-w-6xl mx-auto px-4 py-12">
+        <div class="mb-10 text-center md:text-left">
+            <h2 class="heading-font text-2xl md:text-3xl font-bold text-slate-900">Featured Collection</h2>
+            <p class="text-slate-500 text-sm mt-1">Tap any item to message us directly on WhatsApp for availability and pricing.</p>
         </div>
 
-        <!-- Product Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <!-- Product 1 -->
-            <div class="bg-white rounded-2xl border border-pink-100 overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between">
                 <div>
-                    <div class="relative overflow-hidden aspect-square bg-pink-50">
-                        <img src="https://images.unsplash.com/photo-1674404097486-bd13bf4f3640?q=80&w=500&auto=format&fit=crop" alt="Premium Cream Frill Scrunchie" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-xs text-pink-600 font-bold text-xs px-2.5 py-1 rounded-full shadow-xs">Haircare</span>
+                    <div class="relative overflow-hidden aspect-square bg-slate-50">
+                        <img src="https://images.unsplash.com/photo-1674404097486-bd13bf4f3640?q=80&w=500&auto=format&fit=crop" alt="Premium Cream Frill Scrunchie" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-xs text-slate-800 font-medium text-xs px-2 py-0.5 rounded-full border border-slate-100">Haircare</span>
                     </div>
-                    <div class="p-5 space-y-2">
-                        <h3 class="font-bold text-lg text-gray-800 line-clamp-1">Premium Cream Frill Scrunchie</h3>
-                        <p class="text-sm text-gray-500 line-clamp-2">Soft, premium fabric designed to add an elegant yet cute touch to any hairstyle without damaging your hair.</p>
+                    <div class="p-4 space-y-1.5">
+                        <h3 class="font-bold text-base text-slate-800 line-clamp-1">Premium Cream Frill Scrunchie</h3>
+                        <p class="text-xs text-slate-500 line-clamp-2">Soft, premium fabric designed to add an elegant yet cute touch to any hairstyle without damaging your hair.</p>
                     </div>
                 </div>
-                <div class="p-5 pt-0">
-                    <a href="https://wa.me/919413280040?text=Hi%20YEOMI,%20I'm%20interested%20in%20the%20Premium%20Cream%20Frill%20Scrunchie!" target="_blank" class="w-full bg-pink-50 text-pink-500 hover:bg-pink-500 hover:text-white font-semibold py-2.5 rounded-xl border border-pink-200 flex items-center justify-center gap-2 transition-all group">
-                        Order on WhatsApp
-                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                <div class="p-4 pt-0">
+                    <a href="https://wa.me/919413280040?text=Hi%20YEOMI,%20I'm%20interested%20in%20the%20Premium%20Cream%20Frill%20Scrunchie!" target="_blank" class="w-full bg-slate-50 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-medium py-2 rounded-xl border border-slate-200/60 flex items-center justify-center gap-1.5 text-xs transition-all">
+                        Inquire via WhatsApp
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                     </a>
                 </div>
             </div>
 
             <!-- Product 2 -->
-            <div class="bg-white rounded-2xl border border-pink-100 overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between">
                 <div>
-                    <div class="relative overflow-hidden aspect-square bg-pink-50">
-                        <img src="https://images.unsplash.com/photo-1606293459208-ca320776bb58?q=80&w=500&auto=format&fit=crop" alt="Floral Lilac Ribbon Bow" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-xs text-pink-600 font-bold text-xs px-2.5 py-1 rounded-full shadow-xs">Accessories</span>
+                    <div class="relative overflow-hidden aspect-square bg-slate-50">
+                        <img src="https://images.unsplash.com/photo-1606293459208-ca320776bb58?q=80&w=500&auto=format&fit=crop" alt="Floral Lilac Ribbon Bow" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-xs text-slate-800 font-medium text-xs px-2 py-0.5 rounded-full border border-slate-100">Accessories</span>
                     </div>
-                    <div class="p-5 space-y-2">
-                        <h3 class="font-bold text-lg text-gray-800 line-clamp-1">Floral Lilac Ribbon Bow</h3>
-                        <p class="text-sm text-gray-500 line-clamp-2">Beautiful lilac hair bow with delicate floral patterns. Perfect for a classic, sweet coquette aesthetic look.</p>
+                    <div class="p-4 space-y-1.5">
+                        <h3 class="font-bold text-base text-slate-800 line-clamp-1">Floral Lilac Ribbon Bow</h3>
+                        <p class="text-xs text-slate-500 line-clamp-2">Beautiful lilac hair bow with delicate floral patterns. Perfect for a classic, sweet coquette aesthetic look.</p>
                     </div>
                 </div>
-                <div class="p-5 pt-0">
-                    <a href="https://wa.me/919413280040?text=Hi%20YEOMI,%20I'm%20interested%20in%20the%20Floral%20Lilac%20Ribbon%20Bow!" target="_blank" class="w-full bg-pink-50 text-pink-500 hover:bg-pink-500 hover:text-white font-semibold py-2.5 rounded-xl border border-pink-200 flex items-center justify-center gap-2 transition-all group">
-                        Order on WhatsApp
-                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                <div class="p-4 pt-0">
+                    <a href="https://wa.me/919413280040?text=Hi%20YEOMI,%20I'm%20interested%20in%20the%20Floral%20Lilac%20Ribbon%20Bow!" target="_blank" class="w-full bg-slate-50 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-medium py-2 rounded-xl border border-slate-200/60 flex items-center justify-center gap-1.5 text-xs transition-all">
+                        Inquire via WhatsApp
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                     </a>
                 </div>
             </div>
 
             <!-- Product 3 -->
-            <div class="bg-white rounded-2xl border border-pink-100 overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between">
                 <div>
-                    <div class="relative overflow-hidden aspect-square bg-pink-50">
-                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=500&auto=format&fit=crop" alt="Chubby Panda Ceramic Mug" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-xs text-pink-600 font-bold text-xs px-2.5 py-1 rounded-full shadow-xs">Kitchenware</span>
+                    <div class="relative overflow-hidden aspect-square bg-slate-50">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=500&auto=format&fit=crop" alt="Chubby Panda Ceramic Mug" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-xs text-slate-800 font-medium text-xs px-2 py-0.5 rounded-full border border-slate-100">Kitchenware</span>
                     </div>
-                    <div class="p-5 space-y-2">
-                        <h3 class="font-bold text-lg text-gray-800 line-clamp-1">Chubby Panda Ceramic Mug</h3>
-                        <p class="text-sm text-gray-500 line-clamp-2">Adorable ceramic mug shaped like a chubby panda. Holds heat perfectly for your cozy morning coffee or tea.</p>
+                    <div class="p-4 space-y-1.5">
+                        <h3 class="font-bold text-base text-slate-800 line-clamp-1">Chubby Panda Ceramic Mug</h3>
+                        <p class="text-xs text-slate-500 line-clamp-2">Adorable ceramic mug shaped like a chubby panda. Holds heat perfectly for your cozy morning coffee or tea.</p>
                     </div>
                 </div>
-                <div class="p-5 pt-0">
-                    <a href="https://wa.me/919413280040?text=Hi%20YEOMI,%20I'm%20interested%20in%20the%20Chubby%20Panda%20Ceramic%20Mug!" target="_blank" class="w-full bg-pink-50 text-pink-500 hover:bg-pink-500 hover:text-white font-semibold py-2.5 rounded-xl border border-pink-200 flex items-center justify-center gap-2 transition-all group">
-                        Order on WhatsApp
-                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                <div class="p-4 pt-0">
+                    <a href="https://wa.me/919413280040?text=Hi%20YEOMI,%20I'm%20interested%20in%20the%20Chubby%20Panda%20Ceramic%20Mug!" target="_blank" class="w-full bg-slate-50 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-medium py-2 rounded-xl border border-slate-200/60 flex items-center justify-center gap-1.5 text-xs transition-all">
+                        Inquire via WhatsApp
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                     </a>
                 </div>
             </div>
 
             <!-- Product 4 -->
-            <div class="bg-white rounded-2xl border border-pink-100 overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div class="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between">
                 <div>
-                    <div class="relative overflow-hidden aspect-square bg-pink-50">
-                        <img src="https://images.unsplash.com/photo-1595940875030-81df3d99e650?q=80&w=500&auto=format&fit=crop" alt="Lotso Bear Candy Keychain" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-                        <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-xs text-pink-600 font-bold text-xs px-2.5 py-1 rounded-full shadow-xs">Keychains</span>
+                    <div class="relative overflow-hidden aspect-square bg-slate-50">
+                        <img src="https://images.unsplash.com/photo-1595940875030-81df3d99e650?q=80&w=500&auto=format&fit=crop" alt="Lotso Bear Candy Keychain" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-xs text-slate-800 font-medium text-xs px-2 py-0.5 rounded-full border border-slate-100">Keychains</span>
                     </div>
-                    <div class="p-5 space-y-2">
-                        <h3 class="font-bold text-lg text-gray-800 line-clamp-1">Lotso Bear Candy Keychain</h3>
-                        <p class="text-sm text-gray-500 line-clamp-2">A vibrant, translucent liquid keychain featuring Lotso Bear floating amongst mini candy pieces. Perfect for school bags!</p>
+                    <div class="p-4 space-y-1.5">
+                        <h3 class="font-bold text-base text-slate-800 line-clamp-1">Lotso Bear Candy Keychain</h3>
+                        <p class="text-xs text-slate-500 line-clamp-2">A vibrant, translucent liquid keychain featuring Lotso Bear floating amongst mini candy pieces. Perfect for school bags!</p>
                     </div>
                 </div>
-                <div class="p-5 pt-0">
-                    <a href="https://wa.me/919413280040?text=Hi%20YEOMI,%20I'm%20interested%20in%20the%20Lotso%20Bear%20Candy%20Keychain!" target="_blank" class="w-full bg-pink-50 text-pink-500 hover:bg-pink-500 hover:text-white font-semibold py-2.5 rounded-xl border border-pink-200 flex items-center justify-center gap-2 transition-all group">
-                        Order on WhatsApp
-                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                <div class="p-4 pt-0">
+                    <a href="https://wa.me/919413280040?text=Hi%20YEOMI,%20I'm%20interested%20in%20the%20Lotso%20Bear%20Candy%20Keychain!" target="_blank" class="w-full bg-slate-50 hover:bg-teal-50 text-slate-700 hover:text-teal-700 font-medium py-2 rounded-xl border border-slate-200/60 flex items-center justify-center gap-1.5 text-xs transition-all">
+                        Inquire via WhatsApp
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                     </a>
                 </div>
             </div>
@@ -182,18 +160,18 @@
     </main>
 
     <!-- About Section -->
-    <section id="about" class="bg-white border-t border-pink-100 py-16 px-4">
-        <div class="max-w-4xl mx-auto text-center space-y-4">
-            <h2 class="heading-font text-3xl font-bold text-gray-800">About YEOMI</h2>
-            <p class="text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                YEOMI is born out of a love for all things soft, pastel, and delightful. We curate high-quality lifestyle accessories, stationeries, and mugs that add a little spark of sweetness to your daily routine. Thank you for supporting our small business journey!
+    <section id="about" class="bg-white border-t border-slate-100 py-12 px-4">
+        <div class="max-w-3xl mx-auto text-center space-y-3">
+            <h2 class="heading-font text-2xl font-bold text-slate-900">Our Story</h2>
+            <p class="text-sm text-slate-600 leading-relaxed max-w-xl mx-auto">
+                YEOMI is born out of a passion for bringing small moments of joy to your everyday life. We carefully select each cute accessory, home essential, and unique piece to ensure it brings a smile to your face.
             </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-pink-200 border-t border-pink-300 py-8 text-center text-sm text-pink-800">
-        <p class="font-medium">&copy; 2026 YEOMI. Made with 💖 for all things cute.</p>
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs border-t border-slate-800">
+        <p>&copy; 2026 YEOMI. All rights reserved.</p>
     </footer>
 
 </body>
