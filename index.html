@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEOMI | Cute & Aesthetic Products</title>
-    <!-- Google Fonts for Cute Aesthetic Aesthetic Look -->
+    <title>YEOMI | Cute Things, Happy Hearts</title>
+    <!-- Premium & Aesthetic Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
-            --primary-pink: #FFD1DC;
-            --dark-pink: #FFB6C1;
-            --accent-pink: #FF69B4;
-            --bg-pastel: #FFF5F7;
-            --text-dark: #4A4A4A;
+            --bg-soft-pink: #FFF0F2;
+            --premium-cream: #FFFDFD;
+            --text-charcoal: #3A3233;
+            --accent-rose: #E29CA7;
+            --gold-hint: #D4AF37;
         }
 
         * {
@@ -28,19 +27,16 @@
         }
 
         body {
-            background-color: var(--bg-pastel);
-            color: var(--text-dark);
-            line-height: 1.6;
+            background-color: var(--bg-soft-pink);
+            color: var(--text-charcoal);
+            overflow-x: hidden;
         }
 
-        h1, h2, h3, .brand-logo {
-            font-family: 'Fredoka', sans-serif;
-        }
-
-        /* Navbar */
+        /* Premium Header */
         header {
-            background-color: #ffffff;
-            padding: 15px 5%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 20px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -48,325 +44,340 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(255, 182, 193, 0.2);
+            border-bottom: 1px solid rgba(226, 156, 167, 0.2);
         }
 
-        .brand-logo {
-            font-size: 28px;
-            color: var(--accent-pink);
-            letter-spacing: 2px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: var(--text-charcoal);
+            text-transform: uppercase;
         }
 
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 600;
-            margin-left: 20px;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-pink);
-        }
-
-        /* Hero Section */
-        .hero {
-            margin-top: 80px;
-            background: linear-gradient(180deg, #ffffff 0%, var(--primary-pink) 100%);
-            padding: 80px 5% 60px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 42px;
-            color: #5d4347;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: #7A7A7A;
-            max-width: 600px;
-            margin: 0auto 25px;
-        }
-
-        .cta-btn {
-            display: inline-block;
-            background-color: var(--accent-pink);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
-            transition: transform 0.3s, background-color 0.3s;
-        }
-
-        .cta-btn:hover {
-            transform: translateY(-3px);
-            background-color: #ff4fa8;
-        }
-
-        /* Banner Text */
-        .promo-banner {
-            background-color: var(--dark-pink);
-            color: white;
-            text-align: center;
-            padding: 10px;
-            font-weight: 600;
+        .logo span {
+            font-size: 14px;
+            font-family: 'Quicksand', sans-serif;
             letter-spacing: 1px;
+            display: block;
+            font-weight: 400;
+            color: var(--accent-rose);
+            text-transform: none;
+            margin-top: -4px;
         }
 
-        /* Products Grid Section */
-        .products-section {
-            padding: 60px 5%;
-        }
-
-        .section-title {
+        /* Hero Banner with Torn Paper/Wavy Aesthetics */
+        .hero-container {
+            margin-top: 80px;
+            background: white;
+            padding: 80px 8% 100px;
             text-align: center;
-            font-size: 32px;
-            color: #5d4347;
-            margin-bottom: 40px;
             position: relative;
         }
 
-        .section-title::after {
-            content: '🌸';
-            display: block;
-            font-size: 18px;
-            margin-top: 5px;
+        .hero-container h1 {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 48px;
+            font-weight: 400;
+            color: var(--text-charcoal);
+            margin-bottom: 15px;
         }
 
-        .grid {
+        .hero-container p {
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #706566;
+            max-width: 500px;
+            margin: 0 auto 30px;
+        }
+
+        /* Wavy / Torn Border Effect from your image aesthetics */
+        .wave-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .wave-divider svg {
+            position: relative;
+            display: block;
+            width: calc(150% + 1.3px);
+            height: 40px;
+        }
+
+        .wave-divider .shape-fill {
+            fill: var(--bg-soft-pink);
+        }
+
+        /* Styled Product Showcases (Like your Instagram Layouts) */
+        .showcase-section {
+            padding: 80px 8%;
+        }
+
+        .section-tag {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 24px;
+            text-align: center;
+            color: var(--accent-rose);
+            margin-bottom: 5px;
+        }
+
+        .section-main-title {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            color: var(--text-charcoal);
+        }
+
+        .aesthetic-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            gap: 40px;
         }
 
-        .card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-            border: 1px solid rgba(255, 182, 193, 0.3);
+        .product-card {
+            background: var(--premium-cream);
+            border-radius: 0px; /* Clean sharp boutique look */
+            box-shadow: 0 10px 30px rgba(109, 76, 81, 0.05);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(226, 156, 167, 0.15);
+            padding: 15px;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(226, 156, 167, 0.2);
         }
 
-        .card-img {
+        .img-wrapper {
             width: 100%;
-            height: 320px;
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+            background: #fff;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            background-color: #fcfcfc;
+            transition: transform 0.6s ease;
         }
 
-        .card-body {
-            padding: 20px;
+        .product-card:hover .product-img {
+            transform: scale(1.04);
+        }
+
+        .product-info {
+            padding: 20px 5px 10px;
             text-align: center;
         }
 
-        .card-title {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #5d4347;
+        .product-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: var(--text-charcoal);
+            margin-bottom: 8px;
         }
 
-        .order-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background-color: #25D366; /* WhatsApp Green */
-            color: white;
-            padding: 8px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-
-        .order-btn:hover {
-            background-color: #20ba5a;
-        }
-
-        /* About & Info Section */
-        .info-section {
-            background-color: #ffffff;
-            padding: 50px 5%;
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .info-box {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .info-box p {
+        .product-desc {
+            font-size: 13px;
+            color: #8C7E80;
+            letter-spacing: 0.5px;
             margin-bottom: 15px;
-            font-size: 16px;
         }
 
-        /* Contact & Footer */
-        footer {
-            background-color: #fff0f3;
-            padding: 40px 5% 20px;
-            text-align: center;
-            border-top: 2px dashed var(--primary-pink);
+        /* Minimal Luxury Buttons */
+        .btn-shop {
+            display: inline-block;
+            border-bottom: 1px solid var(--text-charcoal);
+            color: var(--text-charcoal);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+            transition: all 0.3s;
         }
 
-        .social-icons {
+        .btn-shop:hover {
+            color: var(--accent-rose);
+            border-color: var(--accent-rose);
+        }
+
+        /* Floating Actions */
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
+            align-items: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            z-index: 2000;
+            transition: transform 0.3s;
         }
 
-        .social-icons a {
-            font-size: 24px;
-            color: var(--text-dark);
-            transition: color 0.3s;
+        .floating-wa:hover {
+            transform: scale(1.1);
         }
 
-        .social-icons a.insta:hover {
-            color: #E1306C;
+        /* Footer Look like Insta grid info */
+        footer {
+            background: white;
+            padding: 60px 8% 30px;
+            text-align: center;
+            border-top: 1px solid rgba(226, 156, 167, 0.2);
         }
 
-        .social-icons a.wa:hover {
-            color: #25D366;
+        .footer-insta-tag {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            margin-bottom: 25px;
         }
 
-        .footer-text {
+        .footer-insta-tag a {
+            color: var(--text-charcoal);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-rose);
+        }
+
+        .contact-details {
             font-size: 14px;
-            color: #888888;
+            color: #706566;
+            letter-spacing: 1px;
+            line-height: 2;
+            margin-bottom: 30px;
         }
 
-        /* Responsive Mobile View */
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 32px; }
-            .nav-links { display: none; } /* Kept simple for one-page */
+        .copyright {
+            font-size: 12px;
+            color: #B5A9AA;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <div class="brand-logo">🎀 YEOMI</div>
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#products">Collection</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="logo">
+            YEOMI
+            <span>Cute Things, Happy Hearts</span>
+        </div>
+        <div style="font-size: 18px; color: var(--accent-rose);">🎀</div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h1>Welcome to YEOMI 🤍</h1>
-        <p>Cute & Aesthetic Products, Your destination for everything cute. Cute Things, Happy Hearts! ✨</p>
-        <a href="https://wa.me/919413554253" target="_blank" class="cta-btn">
-            <i class="fab fa-whatsapp"></i> Chat & Order Now
-        </a>
-    </section>
+    <!-- Hero Showcase with Custom Wave -->
+    <div class="hero-container">
+        <p style="text-transform: uppercase; font-size: 11px; letter-spacing: 3px; color: var(--accent-rose); font-weight: 600;">Welcome to the Studio</p>
+        <h1>Elegance with a Twist</h1>
+        <p>Your premium destination for aesthetic hair accessories, 3D keychains, and elite mini essentials.</p>
+        <a href="https://wa.me/919413554253" target="_blank" class="btn-shop">Explore Collection</a>
 
-    <!-- Top Announcement Bar -->
-    <div class="promo-banner">
-        📦 Pan India Shipping Available! DM or WhatsApp to Order 💌
+        <!-- Premium torn/wavy shape divider mimicking IMG_6374 -->
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,42.4V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </div>
 
-    <!-- Products Gallery Section -->
-    <section class="products-section" id="products">
-        <h2 class="section-title">Our Best Collections</h2>
-        
-        <div class="grid">
-            <!-- Product 1: Hair Accessories -->
-            <div class="card">
-                <img src="IMG_6411.jpg" alt="Cute Hair Accessories" class="card-img" onerror="this.src='https://via.placeholder.com/300x350/fff0f3/a67c84?text=Cute+Hair+Accessories'">
-                <div class="card-body">
-                    <h3 class="card-title">Cute Hair Accessories & Bows</h3>
-                    <p style="font-size:14px; color:#888;">Trendy clips and headbands to style up</p>
-                    <a href="https://wa.me/919413554253?text=Hi%20YEOMI,%20I%20am%20interested%20in%20your%20Hair%20Accessories" target="_blank" class="order-btn">
-                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
-                    </a>
+    <!-- Main Products Grid -->
+    <section class="showcase-section">
+        <div class="section-tag">Pop of Sunshine</div>
+        <div class="section-main-title">The Cute & Chic List</div>
+
+        <div class="aesthetic-grid">
+            
+            <!-- Card 1: Hair Accessories -->
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="IMG_6411.jpg" alt="Hair Accessories" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1576243345690-4e4b79b63288?q=80&w=600&auto=format&fit=crop'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Aesthetic Hair Bows</h3>
+                    <p class="product-desc">No matter how old you get, cute hair accessories still excite.</p>
+                    <a href="https://wa.me/919413554253?text=Hi%20Yeomi,%20I%20want%20to%20order%20Hair%20Accessories" target="_blank" class="btn-shop">Shop Now</a>
                 </div>
             </div>
 
-            <!-- Product 2: Keychains -->
-            <div class="card">
-                <img src="IMG_6410.jpg" alt="Aesthetic Keychains" class="card-img" onerror="this.src='https://via.placeholder.com/300x350/fff0f3/a67c84?text=Aesthetic+Keychains'">
-                <div class="card-body">
-                    <h3 class="card-title">Aesthetic 3D Keychains</h3>
-                    <p style="font-size:14px; color:#888;">Cute characters for your keys & bags</p>
-                    <a href="https://wa.me/919413554253?text=Hi%20YEOMI,%20I%20am%20interested%20in%20your%20Cute%20Keychains" target="_blank" class="order-btn">
-                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
-                    </a>
+            <!-- Card 2: Keychains -->
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="IMG_6410.jpg" alt="Keychains" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600&auto=format&fit=crop'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">3D Cute Keychains</h3>
+                    <p class="product-desc">The perfect toxic trait: buying every cute keychain you see.</p>
+                    <a href="https://wa.me/919413554253?text=Hi%20Yeomi,%20I%20want%20to%20order%20Cute%20Keychains" target="_blank" class="btn-shop">Shop Now</a>
                 </div>
             </div>
 
-            <!-- Product 3: Trendy Jewelry -->
-            <div class="card">
-                <img src="IMG_6409.jpg" alt="Trendy Jewelry" class="card-img" onerror="this.src='https://via.placeholder.com/300x350/fff0f3/a67c84?text=Chic+Jewelry+Collection'">
-                <div class="card-body">
-                    <h3 class="card-title">Chic Aesthetic Jewelry</h3>
-                    <p style="font-size:14px; color:#888;">Elegance with a cute twist</p>
-                    <a href="https://wa.me/919413554253?text=Hi%20YEOMI,%20I%20am%20interested%20in%20your%20Jewelry%20Collection" target="_blank" class="order-btn">
-                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
-                    </a>
+            <!-- Card 3: Jewelry -->
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="IMG_6409.jpg" alt="Jewelry" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=600&auto=format&fit=crop'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Chic Minimal Jewelry</h3>
+                    <p class="product-desc">Bold handles, holographic hues, and a total chic mood.</p>
+                    <a href="https://wa.me/919413554253?text=Hi%20Yeomi,%20I%20want%20to%20order%20Jewelry" target="_blank" class="btn-shop">Shop Now</a>
                 </div>
             </div>
 
-            <!-- Product 4: Mini Wallets & Pouches -->
-            <div class="card">
-                <img src="IMG_6276.jpg" alt="Mini Wallets" class="card-img" onerror="this.src='https://via.placeholder.com/300x350/fff0f3/a67c84?text=Mini+Wallets'">
-                <div class="card-body">
-                    <h3 class="card-title">Cute Mini Wallets & Bags</h3>
-                    <p style="font-size:14px; color:#888;">Compact, trendy, and stylish companions</p>
-                    <a href="https://wa.me/919413554253?text=Hi%20YEOMI,%20I%20am%20interested%20in%20your%20Mini%20Wallets" target="_blank" class="order-btn">
-                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
-                    </a>
+            <!-- Card 4: Wallets -->
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="IMG_6276.jpg" alt="Wallets" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1627123424574-724758594e93?q=80&w=600&auto=format&fit=crop'">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Boutique Mini Wallets</h3>
+                    <p class="product-desc">Compact, trendy, and designed perfectly to fit your style.</p>
+                    <a href="https://wa.me/919413554253?text=Hi%20Yeomi,%20I%20want%20to%20order%20Mini%20Wallets" target="_blank" class="btn-shop">Shop Now</a>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Info Section -->
-    <section class="info-section">
-        <div class="info-box">
-            <h2 style="margin-bottom: 15px; color: #5d4347;">Why Shop With Us?</h2>
-            <p>🌸 <strong>Unique Designs:</strong> Har product ko aapki aesthetic style ko dhyan me rakh kar select kiya gaya hai.</p>
-            <p>📦 <strong>Pan India Shipping:</strong> Aap India me kahi bhi hon, hum cute khushiyan aapke ghar tak deliver karenge.</p>
-            <p>✨ <strong>Easy Ordering:</strong> Bas apni pasandida photo ka screenshot lijiye aur niche diye gaye links par hume share kijiye!</p>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-insta-tag">
+            Find us on Instagram: <a href="https://www.instagram.com/yeomi.in1" target="_blank">@yeomi.in1</a>
         </div>
-    </section>
-
-    <!-- Footer / Contact Section -->
-    <footer id="contact">
-        <div class="social-icons">
-            <!-- Instagram Link -->
-            <a href="https://www.instagram.com/yeomi.in1" target="_blank" class="insta" title="Follow us on Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <!-- WhatsApp Link -->
-            <a href="https://wa.me/919413554253" target="_blank" class="wa" title="Chat on WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+        <div class="contact-details">
+            <i class="fab fa-whatsapp"></i> Order Status & Queries: +91 9413554253 <br>
+            ✨ Unique & Aesthetic • Pan India Shipping ✨
         </div>
-        
-        <p style="margin-bottom: 10px; font-weight: 600; color: #5d4347;">Contact Info:</p>
-        <p style="font-size: 15px; margin-bottom: 20px;">
-            Instagram: <strong>@yeomi.in1</strong><br>
-            WhatsApp: <strong>+91 9413554253</strong>
-        </p>
-        
-        <p class="footer-text">&copy; 2026 YEOMI - Cute Things, Happy Hearts. All Rights Reserved.</p>
+        <div class="copyright">
+            &copy; 2026 YEOMI Studio. All Rights Reserved.
+        </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919413554253" class="floating-wa" target="_blank" title="Chat with YEOMI">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
