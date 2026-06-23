@@ -54,11 +54,11 @@
             border-bottom: 1px dashed rgba(226, 156, 167, 0.4);
         }
 
-        /* Header Layout - PADDING ZERO FOR ZERO GAP */
+        /* Header Layout */
         header {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
-            padding: 5px 5% 0px 5%; /* Niche ki padding khatam */
+            padding: 5px 5% 0px 5% !important;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -67,11 +67,12 @@
             z-index: 1000;
             border-bottom: 1px solid rgba(226, 156, 167, 0.15);
             box-shadow: 0 4px 20px rgba(226, 156, 167, 0.08);
+            height: auto !important;
         }
 
         .logo-container {
             text-align: center;
-            margin-bottom: -5px; /* Logo ko thoda niche kheंचा taaki gap na bache */
+            margin-bottom: -5px;
         }
 
         .brand-logo-img {
@@ -80,16 +81,18 @@
             border-radius: 50px;
         }
 
-        /* Hero Section - GAP REDUCED TO MINIMUM */
+        /* Hero Section - FIXED SCREEN HEIGHT ISSUES */
         .hero-section {
-            background: white;
-            padding: 10px 8% 35px; /* Top padding ekdum 10px kar di */
+            background: white !important;
+            padding: 15px 8% 30px !important; 
             text-align: center;
             position: relative;
-            display: flex;
+            display: flex !important;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            height: auto !important; /* Isse screen jitna bada gap khatam hoga */
+            min-height: unset !important; /* style.css ka bada height rule hatane ke liye */
         }
 
         .hero-section h1 {
@@ -109,7 +112,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* Torn border divider style - ADJUSTED FOR CLOSER SECTIONS */
+        /* Torn border divider style */
         .torn-divider {
             position: absolute;
             bottom: -1px;
@@ -131,12 +134,14 @@
             fill: var(--bg-soft-pink);
         }
 
-        /* WhatsApp Catalog Section - FIXED TIGHT GAP */
+        /* WhatsApp Catalog Section */
         .catalog-callout {
             text-align: center;
-            padding: 20px 20px 15px; /* Padding kam ki taaki dono sections chipke rahein */
-            background: white;
-            margin-top: 0;
+            padding: 20px 20px 15px !important;
+            background: white !important;
+            margin-top: 0 !important;
+            height: auto !important;
+            min-height: unset !important;
         }
 
         /* Grid Section */
@@ -303,10 +308,13 @@
         /* --- MOBILE RESPONSIVE FIXES --- */
         @media (max-width: 768px) {
             header {
-                padding: 2px 5% 0px 5%; /* Mobile par header padding zero */
+                padding: 2px 5% 0px 5% !important;
+                height: auto !important;
             }
             .hero-section {
-                padding: 10px 15px 30px; /* Mobile par gap ekdum hataya */
+                padding: 10px 15px 25px !important;
+                height: auto !important;
+                min-height: unset !important;
             }
             .hero-section h1 {
                 font-size: 26px;
@@ -317,7 +325,9 @@
                 margin-bottom: 12px;
             }
             .catalog-callout {
-                padding: 15px 10px;
+                padding: 15px 10px !important;
+                height: auto !important;
+                min-height: unset !important;
             }
             .product-grid {
                 grid-template-columns: 1fr;
