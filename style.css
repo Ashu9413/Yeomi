@@ -56,4 +56,10 @@ body {
     .grid-container {
         padding: 10px;
     }
+}.shipping-banner{
+background:#ffe7ef;
+text-align:center;
+padding:12px;
+font-weight:700;
+color:#d14d72;
 }
