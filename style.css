@@ -46,3 +46,76 @@ body {
     height: 100%;
     object-fit: cover;
 }
+/* Premium Order Buttons */
+
+.action-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg,#f8c8dc,#e29ca7);
+    color: #3A3233 !important;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(226,156,167,0.25);
+    transition: all .3s ease;
+}
+
+.action-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(226,156,167,0.35);
+}
+
+
+/* Premium Footer */
+
+footer {
+    background: linear-gradient(
+        180deg,
+        #fff,
+        #fff0f2
+    );
+    padding: 60px 5% 35px;
+    text-align:center;
+    border-top:1px solid rgba(226,156,167,.2);
+}
+
+.footer-logo{
+    height:65px;
+    margin-bottom:20px;
+}
+
+.insta-handle{
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.insta-handle a{
+    color:#e29ca7;
+    font-weight:700;
+}
+
+.info-lines{
+    background:white;
+    padding:18px;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(226,156,167,.15);
+    display:inline-block;
+}
+
+.info-lines i{
+    color:#25D366;
+    font-size:20px;
+}
+
+.footer-rights{
+    margin-top:25px;
+    font-size:12px;
+    letter-spacing:1.5px;
+    color:#a88c90;
+}
