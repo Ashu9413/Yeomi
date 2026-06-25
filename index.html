@@ -133,28 +133,35 @@
         .torn-divider .shape-fill {
             fill: var(--bg-soft-pink);
         }
+.categories{
+    padding:30px 5%;
+    text-align:center;
+}
 
-        /* WhatsApp Catalog Section */
-        <section class="categories">
-    <h2>Shop By Category</h2>
+.categories h2{
+    margin-bottom:20px;
+}
 
-    <div class="cat-grid">
-        <button>Wallets</button>
-        <button>Handbags</button>
-        <button>Water Bottles</button>
-        <button>School Bags</button>
-        <button>Lunch Boxes</button>
-        <button>Hair Accessories</button>
-        <button>Coffee Mugs</button>
-        <button>Flower Vases</button>
-        <button>Sunglasses</button>
-        <button>Perfumes</button>
-        <button>Teddy Bears</button>
-        <button>Stationery</button>
-        <button>Toys</button>
-        <button>Home Appliances</button>
-    </div>
-</section>
+.cat-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.cat-grid button{
+    background:#f8c8dc;
+    border:none;
+    padding:12px;
+    border-radius:25px;
+}
+
+.shipping-banner{
+    background:#ffdfe8;
+    text-align:center;
+    padding:12px;
+    font-weight:700;
+}
+        /* WhatsApp Catalog 
 
 <div class="shipping-banner">
 🚚 FREE SHIPPING ON ORDERS ABOVE ₹500
